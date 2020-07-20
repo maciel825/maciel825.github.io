@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>HTML Formulários</h2>
+
+    <fieldset>
+        <legend>Preencha seus dados</legend>
+
+        <form action="#" target="_blank" method="GET">
+            <label for="nome1">Primeiro nome:</label><br>
+            <input type="text" id="nome1" name="nome1" placeholder="Ex.: João"><br>
+            
+            <label for="nome2">Último nome:</label><br>
+            <input type="text" id="nome2" name="nome2" placeholder="Ex.: Santos"><br><br>
+            
+    
+            <label for="genero">Gênero:</label><br/>
+            <input type="radio" name="genero" value="M" checked>Masculino</input>
+            <input type="radio" name="genero" value="F">Feminino</input>
+    
+            <br/>
+            <br/>
+    
+            <label for="formacao">Formação</label>
+            <select id="formacao" name="formacao" size="4" multiple>
+                <option value="1">Fundamental</option>
+                <option value="2" selected>Médio</option>
+                <option value="3">Técnico</option>
+                <option value="4">Superior</option>
+            </select>
+    
+            <br/>
+            <br/>
+    
+            <label form="biografia">Biografia</label>
+            <textarea name="biografia" id="biografia" rows="10" cols="100" disabled>Texto fica aqui</textarea>
+    
+            <br/>
+            <br/>
+    
+            <label form="seubrowser">Qual seu Navegador</label>
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="Internet Explorer"/>
+                <option value="Firefox"/>
+                <option value="Chrome"/>
+                <option value="Opera"/>
+                <option value="Safari"/>
+            </datalist>
+    
+            <br/>
+            <br/>
+
+
+            <label form="habilidades">Marque as habilidades de programação</label>
+            <br/>
+            <input type="checkbox" id="html" name="html" value="HTML">
+            <label for="html">Conheço HTML</label><br>
+            
+            <input type="checkbox" id="css" name="css" value="CSS">
+            <label for="html">Conheço CSS</label><br>
+            
+            <input type="checkbox" id="javascript" name="javascript" value="Javascript">
+            <label for="html">Conheço Javascript</label><br>
+
+            <input type="checkbox" id="react" name="react" value="React">
+            <label for="html"> Conheço React</label><br>
+
+            <input type="checkbox" id="aprender" name="aprender" value="aprender" checked>
+            <label for="html"> Quero aprender</label><br>
+
+            <br/>
+            <br/>
+    
+            <label form="email">Email principal</label>
+            <input type="email" name="email" id="email"/>
+
+
+            <br/>
+            <br/>
+
+            <label for="senha">Password:</label><br>
+            <input type="password" id="senha" name="senha">   
+    
+            <p>
+                <input type="submit" value="Enviar"/>
+                <input type="reset" value="Limpar"/>
+            </p>
+        </form> 
+
+    </fieldset>
+    
+</body>
+</html>
