@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+    <h1 class="titulo">calculadora</h1>
+
+    <form>
+        <div id="visor2">
+          
+        </div> 
+        <div id="visor">
+        </div>
+        <table>
+            <tr>
+                <td><input type="button" value="AC" onclick="ac()"></td>
+                <td><input type="button" value="exp" onclick="exponencial()"></td>
+                <td><input type="button" value="n!" onclick="fatorial()"></td>
+                <td><input type="button" value="/" onclick="divi()"></td>
+            </tr>
+    
+            <tr>
+                <td><input type="button" value="1" onclick="escrever(1)"/></td>
+                <td><input type="button" value="2" onclick="escrever(2)"/></td>
+                <td><input type="button" value="3" onclick="escrever(3)"/></td>
+                <td><input type="button" value="*" onclick="mult()"></td>
+            </tr>
+    
+            <tr>
+               <td><input type="button" value="4" onclick="escrever(4)"/></td>
+                <td><input type="button" value="5" onclick="escrever(5)"/></td>
+                <td><input type="button" value="6" onclick="escrever(6)"/></td>
+                <td><input type="button" value="-" onclick="sub()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="escrever(7)"/></td>
+                <td><input type="button" value="8" onclick="escrever(8)"/></td>
+                <td><input type="button" value="9" onclick="escrever(9)"/></td>
+                <td rowspan="2"><input style="height: 78px;" type="button" value="+" onclick="somar()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="0" onclick="escrever(0)"></td>
+                <td colspan="2"><input style="width: 106px;" type="button" value="=" onclick="result()"></td>                
+            </tr>
+        </table>        
+    </form>
+    <script src="javascript.js"></script>
+</body>
+</html>
